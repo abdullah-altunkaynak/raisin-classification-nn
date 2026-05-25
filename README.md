@@ -32,7 +32,26 @@ Modelimiz test veri seti üzerinde **%86 genel doğruluk (Accuracy)** oranına u
 | **Besni** | 0.87 | 0.85 | 0.86 |
 | **Genel Ortalama** | **0.86** | **0.86** | **0.86** |
 
+### Proje Görselleri
 
+#### 1. Keşifçi Veri Analizi (EDA) Grafikleri
+Model eğitiminden önce verilerin yapısını anlamak adına çıkarılan grafikler aşağıda sunulmuştur:
+
+<p align="center">
+  <img src="korelasyon_matrisi.png" alt="Özellikler Arası Korelasyon Matrisi" width="450"/>
+  <img src="area.png" alt="Sınıflara Göre Alan Dağılımı" width="450"/>
+</p>
+
+#### 2. Model Eğitim ve Sınıflandırma Performansı
+YSA modelinin 50 epoch boyunca eğitim geçmişi ve test seti üzerindeki başarı sonuçları:
+
+<p align="center">
+  <img src="accuracyvloss.png" alt="Eğitim ve Doğrulama Grafikleri" width="500"/>
+</p>
+
+<p align="center">
+  <img src="confusionmatrix.png" alt="Confusion Matrix" width="400"/>
+</p>
 
 * **Confusion Matrix:** Model 180 test örneğinden 154 tanesini tamamen doğru sınıflandırmıştır.
 * **Loss/Accuracy Grafik Yapısı:** İlk 15 epoch içerisinde hızlıca yakınsayan model, eğitim ve doğrulama süreçlerinde paralel ve kararlı bir grafik sergilemiştir.
